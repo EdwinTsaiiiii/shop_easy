@@ -8,6 +8,16 @@
   }, {
     "path": "pages/my/my"
   }],
+  "subPackages": [{
+    "root": "subpkg",
+    "pages": [{
+      "path": "goods_detail/goods_detail",
+      "style": {}
+    },{
+      "path": "goods_list/goods_list",
+      "style": {}
+    }]
+  }],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "易购",
