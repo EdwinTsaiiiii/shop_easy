@@ -16,12 +16,21 @@
     },{
       "path": "goods_list/goods_list",
       "style": {}
-    }]
+    }    ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
   }],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "易购",
-    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarBackgroundColor": "#C00000",
     "backgroundColor": "#FFFFFF"
   },
   "tabBar": {
