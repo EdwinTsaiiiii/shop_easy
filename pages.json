@@ -13,19 +13,19 @@
     "pages": [{
       "path": "goods_detail/goods_detail",
       "style": {}
-    },{
+    }, {
       "path": "goods_list/goods_list",
-      "style": {}
-    }    ,{
-                    "path" : "search/search",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
+      "style": {
+        "onReachBottomDistance": 150,
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#F8F8F8"
+      }
+    }, {
+      "path": "search/search",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    }]
   }],
   "globalStyle": {
     "navigationBarTextStyle": "black",
