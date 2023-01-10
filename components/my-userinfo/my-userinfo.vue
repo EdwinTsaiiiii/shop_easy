@@ -3,8 +3,8 @@
 
     <!-- 头像昵称区域 -->
     <view class="top-box">
-      <image src="" class="avatar"></image>
-      <view class="nickname">xxx</view>
+      <image :src="userinfo.avatarUrl" class="avatar"></image>
+      <view class="nickname">{{userinfo.nickName}}</view>
     </view>
 
     <!-- 面板的列表区域 -->
@@ -80,7 +80,10 @@
 </template>
 
 <script>
-  import { mapMutations } from 'vuex'
+  import {
+    mapState,
+    mapMutations
+  } from 'vuex'
   export default {
     name: "my-userinfo",
     data() {
@@ -88,8 +91,11 @@
 
       };
     },
+    computed: {
+      ...mapState('m_user', ['userinfo'])
+    },
     methods: {
-       ...mapMutations('m_user', ['updateUserInfo', 'updateToken', 'updateAddress']),
+      ...mapMutations('m_user', ['updateUserInfo', 'updateToken', 'updateAddress']),
       // 退出登录
       async logout() {
         // 询问用户是否退出登录
